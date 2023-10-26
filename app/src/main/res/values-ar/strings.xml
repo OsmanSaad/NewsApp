@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewsApp</string>
+
+    <string name="open">Drawer Open</string>
+    <string name="close">Drawer Close</string>
+
+    <string name="chose_category">أختر التصنيف ذات اهميه لك</string>
+    <string name="appbar_category_title">النصنيف</string>
+    <string name="appbar_settings_title">الاعدادات</string>
+
+
+    <string name="drawer_header">الاخبار</string>
+    <string name="news_details">تفاصيل الخبر</string>
+    <string name="nesws">ألاخبار</string>
+    <string name="search_hint">أبحث هنا...</string>
+
+
+    <string name="Sports">الرياضه</string>
+    <string name="General">عام</string>
+    <string name="Health">الصحه</string>
+    <string name="Business">البيزنس</string>
+    <string name="Entertainment">Entertainment</string>
+    <string name="Science">العلوم</string>
+
+    <string name="language">ألغه</string>
+    <string-array name="language">
+        <item>ألغه</item>
+        <item>النظام</item>
+        <item>ألانجليزيه</item>
+        <item>ألعربيه</item>
+    </string-array>
+</resources>

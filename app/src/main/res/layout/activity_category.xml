@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.CategoryActivity"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+    android:background="@drawable/pattern">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/appbar_shape">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/title_toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/appbar_category_title"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"/>
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/newssearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:inputType="textAutoComplete"
+                    app:searchIcon="@drawable/search_ic"
+                    app:queryBackground="@drawable/search_shape"
+                    app:defaultQueryHint="@string/search_hint"
+                    android:layout_margin="10dp"
+                    app:closeIcon="@drawable/close_ic"
+                    app:searchHintIcon="@drawable/search_hint_ic"
+                    android:layout_gravity="center_vertical|end" />
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navGraph="@navigation/setup_nav" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.material.navigation.NavigationView
+       android:id="@+id/navigationDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_menue"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+    tools:context=".ui.fragment.CategoryFragment"
+    android:background="@drawable/pattern">
+
+        <TextView
+            android:id="@+id/pick_category_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chose_category"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/category_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:padding="12dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pick_category_text"
+            app:spanCount="2"
+            tools:listitem="@layout/categoryitem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

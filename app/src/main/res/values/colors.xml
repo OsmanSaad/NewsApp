@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green">#39A552</color>
+    <color name="sport_category_color">#C91C22</color>
+    <color name="politices_category_color">#003E90</color>
+    <color name="health_category_color">#ED1E79</color>
+    <color name="business_category_color">#CF7E48</color>
+    <color name="entertainment_category_color">#4882CF</color>
+    <color name="science_category_color">#F2D352</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="gray">#807D7D</color>
 </resources>

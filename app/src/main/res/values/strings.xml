@@ -1,3 +1,33 @@
 <resources>
-    <string name="app_name">NeswsApp</string>
+    <string name="app_name">NewsApp</string>
+
+    <string name="open">Drawer Open</string>
+    <string name="close">Drawer Close</string>
+    <string name="chose_category">Pick your category of interest</string>
+    <string name="appbar_category_title">Category</string>
+    <string name="appbar_settings_title">Settings</string>
+
+
+    <string name="drawer_header">News App</string>
+    <string name="news_details">News Details</string>
+    <string name="nesws">News</string>
+
+
+    <string name="Sports">Sports</string>
+    <string name="General">General</string>
+    <string name="Health">Health</string>
+    <string name="Business">Business</string>
+    <string name="Entertainment">Entertainment</string>
+    <string name="Science">Science</string>
+
+    <string name="language">Language</string>
+    <string name="search_hint">Search...</string>
+    <string-array name="language">
+        <item>Language</item>
+        <item>System</item>
+        <item>English</item>
+        <item>Arabic</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
